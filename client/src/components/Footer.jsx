@@ -11,7 +11,7 @@ export default function Footer() {
           ALL VD <span className="grad-text">HD</span>
         </div>
         <div className="text-xs text-slate-500">
-          Dibuat dengan <span className="text-brand">♥</span> + kopi oleh{' '}
+          Dibuat dengan <span className="text-brand"></span> secangkir kopi oleh{' '}
           <span className="font-semibold text-slate-300">[Rifky]</span> ·{' '}
           <span className="text-slate-400">v{cfg?.version || '5.0.0'}</span>
         </div>
