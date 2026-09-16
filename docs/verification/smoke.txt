@@ -1,0 +1,95 @@
+
+> newstatus-hd@5.0.3 smoke
+> node scripts/smoke.js
+
+2026-09-16 11:15:11 [32m[INFO][0m FFmpeg : /home/user/repo/node_modules/ffmpeg-static/ffmpeg
+2026-09-16 11:15:11 [32m[INFO][0m FFprobe: /home/user/repo/node_modules/ffprobe-static/bin/linux/x64/ffprobe
+2026-09-16 11:15:11 [32m[INFO][0m Engine  : ALL VD HD Engine v5.0.0 · x264=yes · hdr=full · vmaf=yes · ffmpeg=7.0.2-static
+
+=== 1. Server boot & branding ===
+2026-09-16 11:15:11 [32m[INFO][0m ⚡ ALL VD HD v5.0.3 (by [Rifky]) jalan di :3999
+2026-09-16 11:15:11 [32m[INFO][0m    Data dir : /tmp/hdjir_smoke
+2026-09-16 11:15:11 [32m[INFO][0m    Engine   : ALL VD HD Engine v5.0.0 · mode default balanced
+2026-09-16 11:15:11 [33m[WARN][0m    ⚠ MOCK_SEND aktif — koneksi WhatsApp di-simulasikan!
+2026-09-16 11:15:12 [32m[INFO][0m Koneksi WhatsApp: starting
+2026-09-16 11:15:12 [32m[INFO][0m Koneksi WhatsApp: connecting
+2026-09-16 11:15:12 [32m[INFO][0m Koneksi WhatsApp: qr
+  ✅ GET /api/config — v5.0.3
+  ✅ slug & credit — HD Jir · [Rifky]
+  ✅ engine v5 terdeteksi — ALL VD HD Engine v5.0.0
+  ✅ codec H.264 High 4.2 + AAC 192k — H.264 High 4.2 + AAC 192k
+  ✅ 5 target platform — wa/tiktok/ig/shorts/universal
+  ✅ 3 mode encode — turbo/balanced/max
+  ✅ tidak ada jejak brand lama
+  ✅ GET /api/health (cepat) — engine ALL VD HD Engine v5.0.0
+  ✅ GET /api/status (flag mock) — state=qr
+
+=== 2. Unit: pairing code (FIX v5) ===
+  ✅ normalisasi 0812… → 62812… — 6281234567890
+  ✅ normalisasi +62… → 62… — 6281234567890
+  ✅ normalisasi 812… → 62812…
+  ✅ nomor invalid ditolak
+  ✅ kode diformat 8 char CROCKFORD UPPERCASE — ABCD1234
+  ✅ tidak ada listener pairing.code di Baileys
+
+=== 3. Engine v5: plan per target ===
+  ✅ target wa: fps ≤30, loudness -16/-1.5 — 30fps -16LUFS
+  ✅ target tiktok: fps ≤60, loudness -14/-1.0, sharpen ON — sharp=0.2
+  ✅ target ig: fps ≤30, sharpen ON — sharp=0.18
+  ✅ H.264 level 4.2 utk ≤1080p — level=4.2
+  ✅ GOP 2 detik — 60 frame @30fps
+  ✅ audio AAC 192k — 192k
+  ✅ auto-trim WA 30s — 30s
+  ✅ auto-trim IG 90s — 90s
+  ✅ auto-trim Shorts 180s — 180s
+  ✅ TikTok tanpa trim — 200s
+  ✅ budget WA ≤16MB dihormati plan — est 16MB / 16MB
+  ✅ TikTok 1080p 2-pass Maksimal = cap 12 Mbps — 12000k
+  ✅ IG 1080p 2-pass Maksimal = cap 10 Mbps — 10000k
+
+=== 4. Endpoint /api/plan (preview) ===
+  ✅ upload dengan field target — target=tiktok
+  ✅ /api/plan preview resolusi+bitrate+ukuran — 1920x1080 · 10.0Mbps · ≈18.7MB
+  ✅ /api/plan ikut target
+
+=== 5. Kompresi nyata target TikTok & IG ===
+2026-09-16 11:15:18 [36m[DEBUG][0m Loudnorm fallback dinamis
+2026-09-16 11:15:18 [36m[DEBUG][0m Filter: fps=30,scale=1920:1080:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,hqdn3d=2:1.5:6:6,unsharp=5:5:0.2:5:5:0.0,format=yuv420p
+  ✅ encode target tiktok — 1920x1080 · 0.91MB
+2026-09-16 11:15:31 [36m[DEBUG][0m Loudness terukur: I=-21.78 TP=-11.35 → linear ke -14 LUFS
+2026-09-16 11:15:31 [36m[DEBUG][0m Filter: fps=30,scale=1920:1080:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,hqdn3d=2:1.5:6:6,unsharp=5:5:0.18:5:5:0.0,format=yuv420p
+  ✅ encode target ig — 1920x1080 · 0.94MB
+2026-09-16 11:15:45 [36m[DEBUG][0m Loudness terukur: I=-21.78 TP=-11.35 → linear ke -16 LUFS
+2026-09-16 11:15:45 [36m[DEBUG][0m Filter: fps=30,scale=1920:1080:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,hqdn3d=2:1.5:6:6,format=yuv420p
+  ✅ pembatalan kompresi berfungsi
+
+=== 6. Pipeline lengkap via socket (upload → kompres → kirim mock) ===
+2026-09-16 11:15:46 [32m[INFO][0m Client terhubung: QXBzkbv7PfU_3Bh5AAAB
+  ✅ upload sukses — plan: Full HD 1080p, 1920x1080
+2026-09-16 11:15:46 [36m[DEBUG][0m Loudness terukur: I=-21.78 TP=-11.35 → linear ke -16 LUFS
+2026-09-16 11:15:46 [36m[DEBUG][0m Filter: fps=30,scale=1920:1080:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,hqdn3d=2:1.5:6:6,format=yuv420p
+2026-09-16 11:15:57 [32m[INFO][0m [MOCK] Kirim video ke 6281234567890
+2026-09-16 11:15:59 [32m[INFO][0m Selesai: uji_30s.mp4 → 6281234567890 (0.96 MB · 1920x1080 · balanced · 13.3s)
+  ✅ job selesai — ke 6281234567890
+  ✅ events compress:start & progress & done
+  ✅ events send:start
+  ✅ history ter-update
+  ✅ riwayat tersimpan + platform tercatat — uji_30s.mp4 → 6281234567890 (WA Status)
+  ✅ video hasil kompres disimpan utk resend
+2026-09-16 11:15:59 [32m[INFO][0m [MOCK] Kirim video ke 6281234567890
+2026-09-16 11:16:01 [32m[INFO][0m Selesai: uji_30s.mp4 → 6281234567890 (0.96 MB · 1920x1080 · resend · 2.0s)
+  ✅ kirim ulang (resend) sukses
+2026-09-16 11:16:01 [36m[DEBUG][0m Loudness terukur: I=-21.78 TP=-11.35 → linear ke -16 LUFS
+2026-09-16 11:16:01 [36m[DEBUG][0m Filter: fps=30,scale=1920:1080:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,hqdn3d=2:1.5:6:6,format=yuv420p
+2026-09-16 11:16:12 [32m[INFO][0m Koneksi WhatsApp: qr
+2026-09-16 11:16:13 [32m[INFO][0m [MOCK] Kirim video ke 6281111111111
+2026-09-16 11:16:15 [32m[INFO][0m [MOCK] Kirim video ke 6282222222222
+2026-09-16 11:16:17 [32m[INFO][0m Selesai: uji_multi.mp4 → 6281111111111, 6282222222222 (0.96 MB · 1920x1080 · balanced · 15.7s)
+  ✅ kirim multi-target (2 nomor) — 6281111111111, 6282222222222
+2026-09-16 11:16:17 [36m[DEBUG][0m Loudnorm fallback dinamis
+2026-09-16 11:16:17 [36m[DEBUG][0m Filter: fps=30,scale=1920:1080:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,hqdn3d=2:1.5:6:6,unsharp=5:5:0.2:5:5:0.0,format=yuv420p
+2026-09-16 11:16:31 [32m[INFO][0m Selesai: uji_unduh.mp4 → UNDUH (mode unduh, tanpa WA) (0.91 MB · 1920x1080 · turbo · 13.5s)
+  ✅ mode unduh: proses jalan tanpa nomor tujuan — downloadOnly=true · TikTok
+  ✅ mode unduh: file HD bisa diunduh via /api/download — 0.91 MB
+
+=== HASIL: 45 lolos, 0 gagal ===

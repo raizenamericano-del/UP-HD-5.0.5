@@ -1,0 +1,639 @@
+[
+  {
+    "case": "portrait-tiktok",
+    "target": "tiktok",
+    "mode": "balanced",
+    "meta": {
+      "file": "/tmp/v5ver/portrait-tiktok.mp4",
+      "sizeBytes": 3586338,
+      "sizeMB": 3.42,
+      "width": 720,
+      "height": 1280,
+      "durationSec": 10,
+      "fps": 30,
+      "target": "tiktok",
+      "targetLabel": "TikTok",
+      "profileKey": "1080p",
+      "profileLabel": "Full HD 1080p",
+      "fellBack": null,
+      "mode": "balanced",
+      "modeLabel": "Seimbang",
+      "engine": "ALL VD HD Engine v5.0.0",
+      "videoKbps": 7440,
+      "audioKbps": 192,
+      "trimmed": false,
+      "hdrTonemap": false,
+      "estimatedMB": 9.3,
+      "plan": {
+        "engine": {
+          "name": "ALL VD HD Engine",
+          "version": "5.0.0"
+        },
+        "target": "tiktok",
+        "targetLabel": "TikTok",
+        "mode": "balanced",
+        "modeLabel": "Seimbang",
+        "modeDesc": "Default. Kualitas HD, waktu encode wajar.",
+        "profileKey": "1080p",
+        "profileLabel": "Full HD 1080p",
+        "quality": "1080p",
+        "width": 720,
+        "height": 1280,
+        "portrait": true,
+        "fps": 30,
+        "gopFrames": 60,
+        "level": "4.2",
+        "durationSec": 10,
+        "sourceDurationSec": 10,
+        "trimmed": false,
+        "trimStartSec": 0,
+        "videoKbps": 7440,
+        "vbvMaxKbps": 12000,
+        "audioKbps": 192,
+        "audioMode": "mono 48kHz",
+        "loudness": {
+          "I": -14,
+          "TP": -1,
+          "LRA": 11,
+          "enabled": true
+        },
+        "estimatedMB": 9.3,
+        "maxOutputMB": 50,
+        "twoPass": false,
+        "enc": {
+          "refs": 2,
+          "bframes": 3,
+          "lookahead": 20,
+          "level": "4.2",
+          "preset": "medium",
+          "lean": true,
+          "heavy": false,
+          "lowMem": false,
+          "threads": 2
+        },
+        "mem": {
+          "limitMB": 1985,
+          "lowMem": false
+        },
+        "denoise": false,
+        "sharpen": 0.2,
+        "hdrTonemap": false,
+        "notes": [
+          "Target TikTok: maks 60 fps · loudness -14 LUFS (TP -1) · budget 50 MB.",
+          "Unsharp luma 0.2 aktif (default target ini — bikin detail bertahan setelah re-encode platform)."
+        ]
+      }
+    },
+    "loud": {
+      "i": "-14.0",
+      "tp": "-6.6"
+    }
+  },
+  {
+    "case": "portrait-ig",
+    "target": "ig",
+    "mode": "balanced",
+    "meta": {
+      "file": "/tmp/v5ver/portrait-ig.mp4",
+      "sizeBytes": 3581783,
+      "sizeMB": 3.42,
+      "width": 720,
+      "height": 1280,
+      "durationSec": 10,
+      "fps": 30,
+      "target": "ig",
+      "targetLabel": "IG Reels / Story",
+      "profileKey": "1080p",
+      "profileLabel": "Full HD 1080p",
+      "fellBack": null,
+      "mode": "balanced",
+      "modeLabel": "Seimbang",
+      "engine": "ALL VD HD Engine v5.0.0",
+      "videoKbps": 6200,
+      "audioKbps": 192,
+      "trimmed": false,
+      "hdrTonemap": false,
+      "estimatedMB": 7.8,
+      "plan": {
+        "engine": {
+          "name": "ALL VD HD Engine",
+          "version": "5.0.0"
+        },
+        "target": "ig",
+        "targetLabel": "IG Reels / Story",
+        "mode": "balanced",
+        "modeLabel": "Seimbang",
+        "modeDesc": "Default. Kualitas HD, waktu encode wajar.",
+        "profileKey": "1080p",
+        "profileLabel": "Full HD 1080p",
+        "quality": "1080p",
+        "width": 720,
+        "height": 1280,
+        "portrait": true,
+        "fps": 30,
+        "gopFrames": 60,
+        "level": "4.2",
+        "durationSec": 10,
+        "sourceDurationSec": 10,
+        "trimmed": false,
+        "trimStartSec": 0,
+        "videoKbps": 6200,
+        "vbvMaxKbps": 10000,
+        "audioKbps": 192,
+        "audioMode": "mono 48kHz",
+        "loudness": {
+          "I": -14,
+          "TP": -1,
+          "LRA": 11,
+          "enabled": true
+        },
+        "estimatedMB": 7.8,
+        "maxOutputMB": 50,
+        "twoPass": false,
+        "enc": {
+          "refs": 2,
+          "bframes": 3,
+          "lookahead": 20,
+          "level": "4.2",
+          "preset": "medium",
+          "lean": true,
+          "heavy": false,
+          "lowMem": false,
+          "threads": 2
+        },
+        "mem": {
+          "limitMB": 1985,
+          "lowMem": false
+        },
+        "denoise": false,
+        "sharpen": 0.18,
+        "hdrTonemap": false,
+        "notes": [
+          "Target IG Reels / Story: maks 30 fps · loudness -14 LUFS (TP -1) · auto-trim 90s · budget 50 MB.",
+          "Unsharp luma 0.18 aktif (default target ini — bikin detail bertahan setelah re-encode platform)."
+        ]
+      }
+    },
+    "loud": {
+      "i": "-14.0",
+      "tp": "-6.6"
+    }
+  },
+  {
+    "case": "4k-tiktok",
+    "target": "tiktok",
+    "mode": "balanced",
+    "meta": {
+      "file": "/tmp/v5ver/4k-tiktok.mp4",
+      "sizeBytes": 9572099,
+      "sizeMB": 9.13,
+      "width": 1920,
+      "height": 1080,
+      "durationSec": 8,
+      "fps": 30,
+      "target": "tiktok",
+      "targetLabel": "TikTok",
+      "profileKey": "1080p",
+      "profileLabel": "Full HD 1080p",
+      "fellBack": null,
+      "mode": "balanced",
+      "modeLabel": "Seimbang",
+      "engine": "ALL VD HD Engine v5.0.0",
+      "videoKbps": 7440,
+      "audioKbps": 192,
+      "trimmed": false,
+      "hdrTonemap": false,
+      "estimatedMB": 7.5,
+      "plan": {
+        "engine": {
+          "name": "ALL VD HD Engine",
+          "version": "5.0.0"
+        },
+        "target": "tiktok",
+        "targetLabel": "TikTok",
+        "mode": "balanced",
+        "modeLabel": "Seimbang",
+        "modeDesc": "Default. Kualitas HD, waktu encode wajar.",
+        "profileKey": "1080p",
+        "profileLabel": "Full HD 1080p",
+        "quality": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "portrait": false,
+        "fps": 30,
+        "gopFrames": 60,
+        "level": "4.2",
+        "durationSec": 8,
+        "sourceDurationSec": 8,
+        "trimmed": false,
+        "trimStartSec": 0,
+        "videoKbps": 7440,
+        "vbvMaxKbps": 12000,
+        "audioKbps": 192,
+        "audioMode": "mono 48kHz",
+        "loudness": {
+          "I": -14,
+          "TP": -1,
+          "LRA": 11,
+          "enabled": true
+        },
+        "estimatedMB": 7.5,
+        "maxOutputMB": 50,
+        "twoPass": false,
+        "enc": {
+          "refs": 2,
+          "bframes": 3,
+          "lookahead": 20,
+          "level": "4.2",
+          "preset": "fast",
+          "lean": true,
+          "heavy": true,
+          "lowMem": false,
+          "threads": 2
+        },
+        "mem": {
+          "limitMB": 1985,
+          "lowMem": false
+        },
+        "denoise": false,
+        "sharpen": 0.2,
+        "hdrTonemap": false,
+        "notes": [
+          "Target TikTok: maks 60 fps · loudness -14 LUFS (TP -1) · budget 50 MB.",
+          "Sumber 3840x2160 @ 30fps — beban berat, engine pakai setting hemat (level 4.2, preset fast).",
+          "Unsharp luma 0.2 aktif (default target ini — bikin detail bertahan setelah re-encode platform)."
+        ]
+      }
+    },
+    "loud": {
+      "i": "-14.0",
+      "tp": "-6.9"
+    }
+  },
+  {
+    "case": "4k-ig",
+    "target": "ig",
+    "mode": "balanced",
+    "meta": {
+      "file": "/tmp/v5ver/4k-ig.mp4",
+      "sizeBytes": 9520978,
+      "sizeMB": 9.08,
+      "width": 1920,
+      "height": 1080,
+      "durationSec": 8,
+      "fps": 30,
+      "target": "ig",
+      "targetLabel": "IG Reels / Story",
+      "profileKey": "1080p",
+      "profileLabel": "Full HD 1080p",
+      "fellBack": null,
+      "mode": "balanced",
+      "modeLabel": "Seimbang",
+      "engine": "ALL VD HD Engine v5.0.0",
+      "videoKbps": 6200,
+      "audioKbps": 192,
+      "trimmed": false,
+      "hdrTonemap": false,
+      "estimatedMB": 6.2,
+      "plan": {
+        "engine": {
+          "name": "ALL VD HD Engine",
+          "version": "5.0.0"
+        },
+        "target": "ig",
+        "targetLabel": "IG Reels / Story",
+        "mode": "balanced",
+        "modeLabel": "Seimbang",
+        "modeDesc": "Default. Kualitas HD, waktu encode wajar.",
+        "profileKey": "1080p",
+        "profileLabel": "Full HD 1080p",
+        "quality": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "portrait": false,
+        "fps": 30,
+        "gopFrames": 60,
+        "level": "4.2",
+        "durationSec": 8,
+        "sourceDurationSec": 8,
+        "trimmed": false,
+        "trimStartSec": 0,
+        "videoKbps": 6200,
+        "vbvMaxKbps": 10000,
+        "audioKbps": 192,
+        "audioMode": "mono 48kHz",
+        "loudness": {
+          "I": -14,
+          "TP": -1,
+          "LRA": 11,
+          "enabled": true
+        },
+        "estimatedMB": 6.2,
+        "maxOutputMB": 50,
+        "twoPass": false,
+        "enc": {
+          "refs": 2,
+          "bframes": 3,
+          "lookahead": 20,
+          "level": "4.2",
+          "preset": "fast",
+          "lean": true,
+          "heavy": true,
+          "lowMem": false,
+          "threads": 2
+        },
+        "mem": {
+          "limitMB": 1985,
+          "lowMem": false
+        },
+        "denoise": false,
+        "sharpen": 0.18,
+        "hdrTonemap": false,
+        "notes": [
+          "Target IG Reels / Story: maks 30 fps · loudness -14 LUFS (TP -1) · auto-trim 90s · budget 50 MB.",
+          "Sumber 3840x2160 @ 30fps — beban berat, engine pakai setting hemat (level 4.2, preset fast).",
+          "Unsharp luma 0.18 aktif (default target ini — bikin detail bertahan setelah re-encode platform)."
+        ]
+      }
+    },
+    "loud": {
+      "i": "-14.0",
+      "tp": "-6.9"
+    }
+  },
+  {
+    "case": "hdr10-tiktok",
+    "target": "tiktok",
+    "mode": "balanced",
+    "meta": {
+      "file": "/tmp/v5ver/hdr10-tiktok.mp4",
+      "sizeBytes": 12465919,
+      "sizeMB": 11.89,
+      "width": 1920,
+      "height": 1080,
+      "durationSec": 8,
+      "fps": 30,
+      "target": "tiktok",
+      "targetLabel": "TikTok",
+      "profileKey": "1080p",
+      "profileLabel": "Full HD 1080p",
+      "fellBack": null,
+      "mode": "balanced",
+      "modeLabel": "Seimbang",
+      "engine": "ALL VD HD Engine v5.0.0",
+      "videoKbps": 7440,
+      "audioKbps": 192,
+      "trimmed": false,
+      "hdrTonemap": true,
+      "estimatedMB": 7.5,
+      "plan": {
+        "engine": {
+          "name": "ALL VD HD Engine",
+          "version": "5.0.0"
+        },
+        "target": "tiktok",
+        "targetLabel": "TikTok",
+        "mode": "balanced",
+        "modeLabel": "Seimbang",
+        "modeDesc": "Default. Kualitas HD, waktu encode wajar.",
+        "profileKey": "1080p",
+        "profileLabel": "Full HD 1080p",
+        "quality": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "portrait": false,
+        "fps": 30,
+        "gopFrames": 60,
+        "level": "4.2",
+        "durationSec": 8,
+        "sourceDurationSec": 8,
+        "trimmed": false,
+        "trimStartSec": 0,
+        "videoKbps": 7440,
+        "vbvMaxKbps": 12000,
+        "audioKbps": 192,
+        "audioMode": "mono 48kHz",
+        "loudness": {
+          "I": -14,
+          "TP": -1,
+          "LRA": 11,
+          "enabled": true
+        },
+        "estimatedMB": 7.5,
+        "maxOutputMB": 50,
+        "twoPass": false,
+        "enc": {
+          "refs": 2,
+          "bframes": 3,
+          "lookahead": 20,
+          "level": "4.2",
+          "preset": "fast",
+          "lean": true,
+          "heavy": true,
+          "lowMem": false,
+          "threads": 2
+        },
+        "mem": {
+          "limitMB": 1985,
+          "lowMem": false
+        },
+        "denoise": false,
+        "sharpen": 0.2,
+        "hdrTonemap": true,
+        "notes": [
+          "Target TikTok: maks 60 fps · loudness -14 LUFS (TP -1) · budget 50 MB.",
+          "Sumber 1920x1080 @ 30fps (HEVC) — beban berat, engine pakai setting hemat (level 4.2, preset fast).",
+          "Sumber HDR/10-bit — dikonversi ke SDR BT.709 (zscale+tonemap) biar warna normal.",
+          "Unsharp luma 0.2 aktif (default target ini — bikin detail bertahan setelah re-encode platform)."
+        ]
+      }
+    },
+    "loud": {
+      "i": "-13.9",
+      "tp": "-6.6"
+    }
+  },
+  {
+    "case": "hdr10-ig",
+    "target": "ig",
+    "mode": "balanced",
+    "meta": {
+      "file": "/tmp/v5ver/hdr10-ig.mp4",
+      "sizeBytes": 11005874,
+      "sizeMB": 10.5,
+      "width": 1920,
+      "height": 1080,
+      "durationSec": 8,
+      "fps": 30,
+      "target": "ig",
+      "targetLabel": "IG Reels / Story",
+      "profileKey": "1080p",
+      "profileLabel": "Full HD 1080p",
+      "fellBack": null,
+      "mode": "balanced",
+      "modeLabel": "Seimbang",
+      "engine": "ALL VD HD Engine v5.0.0",
+      "videoKbps": 6200,
+      "audioKbps": 192,
+      "trimmed": false,
+      "hdrTonemap": true,
+      "estimatedMB": 6.2,
+      "plan": {
+        "engine": {
+          "name": "ALL VD HD Engine",
+          "version": "5.0.0"
+        },
+        "target": "ig",
+        "targetLabel": "IG Reels / Story",
+        "mode": "balanced",
+        "modeLabel": "Seimbang",
+        "modeDesc": "Default. Kualitas HD, waktu encode wajar.",
+        "profileKey": "1080p",
+        "profileLabel": "Full HD 1080p",
+        "quality": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "portrait": false,
+        "fps": 30,
+        "gopFrames": 60,
+        "level": "4.2",
+        "durationSec": 8,
+        "sourceDurationSec": 8,
+        "trimmed": false,
+        "trimStartSec": 0,
+        "videoKbps": 6200,
+        "vbvMaxKbps": 10000,
+        "audioKbps": 192,
+        "audioMode": "mono 48kHz",
+        "loudness": {
+          "I": -14,
+          "TP": -1,
+          "LRA": 11,
+          "enabled": true
+        },
+        "estimatedMB": 6.2,
+        "maxOutputMB": 50,
+        "twoPass": false,
+        "enc": {
+          "refs": 2,
+          "bframes": 3,
+          "lookahead": 20,
+          "level": "4.2",
+          "preset": "fast",
+          "lean": true,
+          "heavy": true,
+          "lowMem": false,
+          "threads": 2
+        },
+        "mem": {
+          "limitMB": 1985,
+          "lowMem": false
+        },
+        "denoise": false,
+        "sharpen": 0.18,
+        "hdrTonemap": true,
+        "notes": [
+          "Target IG Reels / Story: maks 30 fps · loudness -14 LUFS (TP -1) · auto-trim 90s · budget 50 MB.",
+          "Sumber 1920x1080 @ 30fps (HEVC) — beban berat, engine pakai setting hemat (level 4.2, preset fast).",
+          "Sumber HDR/10-bit — dikonversi ke SDR BT.709 (zscale+tonemap) biar warna normal.",
+          "Unsharp luma 0.18 aktif (default target ini — bikin detail bertahan setelah re-encode platform)."
+        ]
+      }
+    },
+    "loud": {
+      "i": "-13.9",
+      "tp": "-6.6"
+    }
+  },
+  {
+    "case": "4k-tiktok-2pass",
+    "target": "tiktok",
+    "mode": "max",
+    "meta": {
+      "file": "/tmp/v5ver/4k-tiktok-2pass.mp4",
+      "sizeBytes": 10095487,
+      "sizeMB": 9.63,
+      "width": 1920,
+      "height": 1080,
+      "durationSec": 8,
+      "fps": 30,
+      "target": "tiktok",
+      "targetLabel": "TikTok",
+      "profileKey": "1080p",
+      "profileLabel": "Full HD 1080p",
+      "fellBack": null,
+      "mode": "max",
+      "modeLabel": "Maksimal",
+      "engine": "ALL VD HD Engine v5.0.0",
+      "videoKbps": 10000,
+      "audioKbps": 192,
+      "trimmed": false,
+      "hdrTonemap": false,
+      "estimatedMB": 10,
+      "plan": {
+        "engine": {
+          "name": "ALL VD HD Engine",
+          "version": "5.0.0"
+        },
+        "target": "tiktok",
+        "targetLabel": "TikTok",
+        "mode": "max",
+        "modeLabel": "Maksimal",
+        "modeDesc": "2-pass — paling bersih & ukuran pasti aman.",
+        "profileKey": "1080p",
+        "profileLabel": "Full HD 1080p",
+        "quality": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "portrait": false,
+        "fps": 30,
+        "gopFrames": 60,
+        "level": "4.2",
+        "durationSec": 8,
+        "sourceDurationSec": 8,
+        "trimmed": false,
+        "trimStartSec": 0,
+        "videoKbps": 10000,
+        "vbvMaxKbps": 12000,
+        "audioKbps": 192,
+        "audioMode": "mono 48kHz",
+        "loudness": {
+          "I": -14,
+          "TP": -1,
+          "LRA": 11,
+          "enabled": true
+        },
+        "estimatedMB": 10,
+        "maxOutputMB": 50,
+        "twoPass": true,
+        "enc": {
+          "refs": 2,
+          "bframes": 3,
+          "lookahead": 20,
+          "level": "4.2",
+          "preset": "slow",
+          "lean": true,
+          "heavy": true,
+          "lowMem": false,
+          "threads": 2
+        },
+        "mem": {
+          "limitMB": 1985,
+          "lowMem": false
+        },
+        "denoise": false,
+        "sharpen": 0.2,
+        "hdrTonemap": false,
+        "notes": [
+          "Target TikTok: maks 60 fps · loudness -14 LUFS (TP -1) · budget 50 MB.",
+          "Sumber 3840x2160 @ 30fps — beban berat, engine pakai setting hemat (level 4.2, preset slow).",
+          "Unsharp luma 0.2 aktif (default target ini — bikin detail bertahan setelah re-encode platform)."
+        ]
+      }
+    },
+    "loud": {
+      "i": "-14.0",
+      "tp": "-6.9"
+    }
+  }
+]

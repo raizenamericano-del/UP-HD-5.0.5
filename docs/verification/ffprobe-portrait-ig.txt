@@ -1,0 +1,39 @@
+=== ALL VD HD Engine v5 — bukti encode nyata: portrait-ig ===
+
+sumber      : /home/user/repo/samples/sample_portrait_9x16.mp4
+target/mode : ig / balanced
+resolusi    : 720x1280 @ 30fps
+bitrate     : video 6.2 Mbps (perkiraan CRF; cap 10 Mbps / target 2-pass 8 Mbps) · audio 192k
+loudness    : target -14 LUFS / TP -1 dBFS · terukur I=-14.0 LUFS / TP -6.6 dBFS
+trim        : tidak
+hdr tonemap : tidak
+sharpen     : 0.18
+mode aktual : Seimbang (balanced) · engine ALL VD HD Engine v5.0.0
+ukuran      : 3.42 MB (budget 50 MB) · 8.3s
+catatan     : Target IG Reels / Story: maks 30 fps · loudness -14 LUFS (TP -1) · auto-trim 90s · budget 50 MB.; Unsharp luma 0.18 aktif (default target ini — bikin detail bertahan setelah re-encode platform).
+
+--- ffprobe hasil encode ---
+codec_name=h264
+profile=High
+codec_type=video
+width=720
+height=1280
+pix_fmt=yuv420p
+level=42
+color_space=bt709
+color_transfer=bt709
+color_primaries=bt709
+r_frame_rate=30/1
+avg_frame_rate=30/1
+bit_rate=2708907
+codec_name=aac
+profile=LC
+codec_type=audio
+sample_rate=48000
+channels=1
+r_frame_rate=0/0
+avg_frame_rate=0/0
+bit_rate=146421
+format_name=mov,mp4,m4a,3gp,3g2,mj2
+duration=10.008000
+size=3581783

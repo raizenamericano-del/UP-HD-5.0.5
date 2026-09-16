@@ -1,0 +1,39 @@
+=== ALL VD HD Engine v5 — bukti encode nyata: hdr10-ig ===
+
+sumber      : /tmp/v5test/src_hdr10.mp4
+target/mode : ig / balanced
+resolusi    : 1920x1080 @ 30fps
+bitrate     : video 6.2 Mbps (perkiraan CRF; cap 10 Mbps / target 2-pass 8 Mbps) · audio 192k
+loudness    : target -14 LUFS / TP -1 dBFS · terukur I=-13.9 LUFS / TP -6.6 dBFS
+trim        : tidak
+hdr tonemap : ya
+sharpen     : 0.18
+mode aktual : Seimbang (balanced) · engine ALL VD HD Engine v5.0.0
+ukuran      : 10.5 MB (budget 50 MB) · 26s
+catatan     : Target IG Reels / Story: maks 30 fps · loudness -14 LUFS (TP -1) · auto-trim 90s · budget 50 MB.; Sumber 1920x1080 @ 30fps (HEVC) — beban berat, engine pakai setting hemat (level 4.2, preset fast).; Sumber HDR/10-bit — dikonversi ke SDR BT.709 (zscale+tonemap) biar warna normal.; Unsharp luma 0.18 aktif (default target ini — bikin detail bertahan setelah re-encode platform).
+
+--- ffprobe hasil encode ---
+codec_name=h264
+profile=High
+codec_type=video
+width=1920
+height=1080
+pix_fmt=yuv420p
+level=42
+color_space=bt709
+color_transfer=bt709
+color_primaries=bt709
+r_frame_rate=30/1
+avg_frame_rate=30/1
+bit_rate=10859394
+codec_name=aac
+profile=LC
+codec_type=audio
+sample_rate=48000
+channels=1
+r_frame_rate=0/0
+avg_frame_rate=0/0
+bit_rate=134575
+format_name=mov,mp4,m4a,3gp,3g2,mj2
+duration=8.101000
+size=11005874

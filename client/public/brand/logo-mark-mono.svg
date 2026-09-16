@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- ALL VD HD — versi mono putih (by [Rifky]) -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round">
+    <path d="M 256 118 A 138 138 0 1 1 121.4 293.6" stroke-width="30" stroke-opacity="0.92"/>
+  </g>
+  <path d="M 222 190 L 330 256 L 222 322 Z"
+        fill="#ffffff" stroke="#ffffff" stroke-width="26" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,15 @@
+node_modules/
+client/node_modules/
+client/dist/
+data/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.railway/
+# session Baileys TIDAK BOLEH masuk git
+auth_info/
+session/
+*.upload
+out/

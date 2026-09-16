@@ -1,0 +1,103 @@
+2026-09-15 04:53:16 [32m[INFO][0m FFmpeg : /home/user/repo/node_modules/ffmpeg-static/ffmpeg
+2026-09-15 04:53:16 [32m[INFO][0m FFprobe: /home/user/repo/node_modules/ffprobe-static/bin/linux/x64/ffprobe
+2026-09-15 04:53:16 [32m[INFO][0m Engine  : ALL VD HD Engine v5.0.0 · x264=yes · hdr=full · vmaf=yes · ffmpeg=7.0.2-static
+
+🎬 ALL VD HD Engine Benchmark — ALL VD HD Engine v5.0.0
+FFmpeg: /home/user/repo/node_modules/ffmpeg-static/ffmpeg · libvmaf=yes · VMAF window=6s
+Metrik: SSIM/PSNR/VMAF hasil SIMULASI re-encode platform vs video sumber asli (makin tinggi = makin tajam di feed).
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════
+📼 sample_1080p_12s.mp4 — 1920x1080 · 12.0s · 30fps · h264 · 1.2 Mbps · bpp 0.019
+════════════════════════════════════════════════════════════════════════════════════════════════════════
+   ⟳ v4 lama (engine lama) 1920x1080    6.49 MB    20.7s
+2026-09-15 04:53:37 [36m[DEBUG][0m Loudness terukur: I=-21.75 TP=-13.55 → linear ke -16 LUFS
+2026-09-15 04:53:37 [36m[DEBUG][0m Filter: fps=30,scale=1920:1080:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,hqdn3d=2:1.5:6:6,format=yuv420p
+   ⟳ v5 wa                1920x1080    7.52 MB    43.2s
+2026-09-15 04:54:21 [36m[DEBUG][0m Loudness terukur: I=-21.75 TP=-13.55 → linear ke -14 LUFS
+2026-09-15 04:54:21 [36m[DEBUG][0m Filter: fps=30,scale=1920:1080:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,hqdn3d=2:1.5:6:6,unsharp=5:5:0.2:5:5:0.0,format=yuv420p
+   ⟳ v5 tiktok            1920x1080    7.03 MB    53.3s
+2026-09-15 04:55:14 [36m[DEBUG][0m Loudness terukur: I=-21.75 TP=-13.55 → linear ke -14 LUFS
+2026-09-15 04:55:14 [36m[DEBUG][0m Filter: fps=30,scale=1920:1080:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,hqdn3d=2:1.5:6:6,unsharp=5:5:0.18:5:5:0.0,format=yuv420p
+   ⟳ v5 ig                1920x1080    6.96 MB    45.9s
+   ⟳ simulasi re-encode platform + ukur SSIM/PSNR/VMAF vs sumber asli…
+
+   engine              res         ukuran    SSIM     PSNR     VMAF     simulasi        waktu
+   ──────────────────────────────────────────────────────────────────────────────────────────────────
+   v4 lama (engine lama)1920x1080   6.49 MB   0.9961   45.52    95.5     WA-status-hd    20.7s
+                                             0.9898   40.31    91.5     WA-status-low   
+   v5 wa               1920x1080   7.52 MB   0.9957   45.28    95.4     WA-status-hd    43.2s
+                                             0.9894   40.22    91.4     WA-status-low   
+   v5 tiktok           1920x1080   7.03 MB   0.9954   45.55    92.7     tiktok-feed     53.3s
+   v5 ig               1920x1080   6.96 MB   0.9947   44.64    92.2     ig-feed         45.9s
+   ──────────────────────────────────────────────────────────────────────────────────────────────────
+   📈 Detail bertahan setelah re-encode WA-HD   : v4 0.9961 → v5-wa 0.9957 · VMAF 95.4585 → 95.3640
+   📈 Tahan di bitrate rendah (WA-low)          : v4 0.9898 → v5-wa 0.9894
+   📈 Setelah re-encode platform masing-masing  : tiktok 0.9954 (VMAF 92.6556) · ig 0.9947 (VMAF 92.1947)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════
+📼 sample_720p_40s.mp4 — 1280x720 · 40.0s · 30fps · h264 · 0.9 Mbps · bpp 0.033
+════════════════════════════════════════════════════════════════════════════════════════════════════════
+   ⟳ v4 lama (engine lama) 1280x720     14.23 MB   62.7s
+2026-09-15 04:59:21 [36m[DEBUG][0m Loudness terukur: I=-21.85 TP=-12.74 → linear ke -16 LUFS
+2026-09-15 04:59:21 [36m[DEBUG][0m Filter: fps=30,scale=1280:720:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,format=yuv420p
+   ⟳ v5 wa                1280x720     14.58 MB   41.3s
+2026-09-15 05:00:01 [36m[DEBUG][0m Loudness terukur: I=-21.85 TP=-12.74 → linear ke -14 LUFS
+2026-09-15 05:00:01 [36m[DEBUG][0m Filter: fps=30,scale=1280:720:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,unsharp=5:5:0.2:5:5:0.0,format=yuv420p
+   ⟳ v5 tiktok            1280x720     13.66 MB   33.4s
+2026-09-15 05:00:35 [36m[DEBUG][0m Loudness terukur: I=-21.85 TP=-12.74 → linear ke -14 LUFS
+2026-09-15 05:00:35 [36m[DEBUG][0m Filter: fps=30,scale=1280:720:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,unsharp=5:5:0.18:5:5:0.0,format=yuv420p
+   ⟳ v5 ig                1280x720     13.57 MB   32.3s
+   ⟳ simulasi re-encode platform + ukur SSIM/PSNR/VMAF vs sumber asli…
+
+   engine              res         ukuran    SSIM     PSNR     VMAF     simulasi        waktu
+   ──────────────────────────────────────────────────────────────────────────────────────────────────
+   v4 lama (engine lama)1280x720    14.23 MB  0.9945   43.13    95.2     WA-status-hd    62.7s
+                                             0.9906   40.15    92.2     WA-status-low   
+   v5 wa               1280x720    14.58 MB  0.9944   43.07    95.4     WA-status-hd    41.3s
+                                             0.9905   40.11    92.0     WA-status-low   
+   v5 tiktok           1280x720    13.66 MB  0.9942   43.39    92.1     tiktok-feed     33.4s
+   v5 ig               1280x720    13.57 MB  0.9933   42.43    91.6     ig-feed         32.3s
+   ──────────────────────────────────────────────────────────────────────────────────────────────────
+   📈 Detail bertahan setelah re-encode WA-HD   : v4 0.9945 → v5-wa 0.9944 · VMAF 95.1940 → 95.3770
+   📈 Tahan di bitrate rendah (WA-low)          : v4 0.9906 → v5-wa 0.9905
+   📈 Setelah re-encode platform masing-masing  : tiktok 0.9942 (VMAF 92.0588) · ig 0.9933 (VMAF 91.5515)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════
+📼 sample_portrait_9x16.mp4 — 720x1280 · 10.0s · 30fps · h264 · 1.0 Mbps · bpp 0.036
+════════════════════════════════════════════════════════════════════════════════════════════════════════
+   ⟳ v4 lama (engine lama) 720x1280     3.32 MB    7.0s
+2026-09-15 05:03:12 [36m[DEBUG][0m Loudness terukur: I=-21.80 TP=-14.46 → linear ke -16 LUFS
+2026-09-15 05:03:12 [36m[DEBUG][0m Filter: fps=30,scale=720:1280:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,format=yuv420p
+   ⟳ v5 wa                720x1280     3.59 MB    6.9s
+2026-09-15 05:03:19 [36m[DEBUG][0m Loudness terukur: I=-21.80 TP=-14.46 → linear ke -14 LUFS
+2026-09-15 05:03:19 [36m[DEBUG][0m Filter: fps=30,scale=720:1280:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,unsharp=5:5:0.2:5:5:0.0,format=yuv420p
+   ⟳ v5 tiktok            720x1280     3.42 MB    7.9s
+2026-09-15 05:03:26 [36m[DEBUG][0m Loudness terukur: I=-21.80 TP=-14.46 → linear ke -14 LUFS
+2026-09-15 05:03:26 [36m[DEBUG][0m Filter: fps=30,scale=720:1280:flags=lanczos+accurate_rnd+full_chroma_int:sws_dither=none,setsar=1,unsharp=5:5:0.18:5:5:0.0,format=yuv420p
+   ⟳ v5 ig                720x1280     3.42 MB    7.8s
+   ⟳ simulasi re-encode platform + ukur SSIM/PSNR/VMAF vs sumber asli…
+
+   engine              res         ukuran    SSIM     PSNR     VMAF     simulasi        waktu
+   ──────────────────────────────────────────────────────────────────────────────────────────────────
+   v4 lama (engine lama)720x1280    3.32 MB   0.9945   43.17    94.7     WA-status-hd    7.0s
+                                             0.9836   37.93    90.7     WA-status-low   
+   v5 wa               720x1280    3.59 MB   0.9944   43.03    94.9     WA-status-hd    6.9s
+                                             0.9833   37.88    91.1     WA-status-low   
+   v5 tiktok           720x1280    3.42 MB   0.9924   41.62    91.9     tiktok-feed     7.9s
+   v5 ig               720x1280    3.42 MB   0.9911   40.57    91.4     ig-feed         7.8s
+   ──────────────────────────────────────────────────────────────────────────────────────────────────
+   📈 Detail bertahan setelah re-encode WA-HD   : v4 0.9945 → v5-wa 0.9944 · VMAF 94.7003 → 94.8979
+   📈 Tahan di bitrate rendah (WA-low)          : v4 0.9836 → v5-wa 0.9833
+   📈 Setelah re-encode platform masing-masing  : tiktok 0.9924 (VMAF 91.9391) · ig 0.9911 (VMAF 91.4327)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════
+RINGKASAN — SSIM setelah re-encode platform (tinggi = lebih tajam)
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+file                          v4→WA      v5wa→WA    v5tiktok→TT   v5ig→IG    Δ SSIM v5wa-v4  VMAF v4→v5wa
+sample_1080p_12s.mp4          0.9961     0.9957     0.9954        0.9947     -0.04% poin    95.4585 → 95.3640
+sample_720p_40s.mp4           0.9945     0.9944     0.9942        0.9933     -0.01% poin    95.1940 → 95.3770
+sample_portrait_9x16.mp4      0.9945     0.9944     0.9924        0.9911     -0.00% poin    94.7003 → 94.8979
+
+Hasil encode lengkap ada di: /tmp/hdjir_bench
+
+BENCH2_EXIT=0

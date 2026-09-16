@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <!-- ALL VD HD — PWA / iOS splash (by [Rifky]) -->
+  <defs>
+    <linearGradient id="spbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0b18"/>
+      <stop offset="1" stop-color="#06060f"/>
+    </linearGradient>
+    <linearGradient id="spicon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="0.5" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="spbrand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="0.5" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="spglowv" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spglowc" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1920" fill="url(#spbg)"/>
+  <circle cx="540" cy="700" r="560" fill="url(#spglowv)"/>
+  <circle cx="880" cy="1560" r="480" fill="url(#spglowc)"/>
+
+  <!-- logo -->
+  <g transform="translate(390 660)">
+    <rect x="0" y="0" width="300" height="300" rx="72" fill="url(#spicon)"/>
+    <path d="M 150 69.1 A 80.7 80.7 0 1 1 71.2 171.6" fill="none" stroke="#ffffff" stroke-opacity="0.92" stroke-width="17.6" stroke-linecap="round"/>
+    <path d="M 129.8 111.1 L 193.1 150 L 129.8 188.9 Z" fill="#ffffff" stroke="#ffffff" stroke-width="15.2" stroke-linejoin="round"/>
+  </g>
+
+  <g font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">
+    <text x="540" y="1090" font-size="88" font-weight="bold" fill="#ffffff">ALL VD <tspan fill="url(#spbrand)">HD</tspan></text>
+    <text x="540" y="1152" font-size="30" fill="#94a3b8" letter-spacing="10">HD JIR · SEMUA VIDEO JADI HD</text>
+    <text x="540" y="1620" font-size="28" fill="#64748b">ALL VD HD Engine v5 · by [Rifky]</text>
+  </g>
+</svg>
